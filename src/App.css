@@ -7,13 +7,14 @@
   height: 85vh;
   overflow-y: auto;
   border: 1px solid #dedede;
+  color: #333;
 }
 
 .download-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 50%;
+  right: 0;
   font-size: 20px;
   padding: 10px 20px;
+  transform: translateY(-50%);
 }
-
