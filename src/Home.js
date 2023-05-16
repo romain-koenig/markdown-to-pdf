@@ -165,7 +165,6 @@ function Home() {
               Print
             </button>
           </div>
-          <a href="/about.html" target="_blank" rel="noopener noreferrer">About</a>
         </div>
       </div>
 
