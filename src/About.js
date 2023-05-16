@@ -3,6 +3,8 @@ function About() {
 		<div className="container">
 			<h1>About</h1>
 			<p><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React logo" /> A React APP </p>
+			<p><img height="32" width="32" src="https://cdn.simpleicons.org/reactrouter/CA4245" alt="React Router logo" /> With React Router</p>
+			<p><img height="32" width="32" src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap logo" /> Styled with Bootstrap</p>
 			<p><img height="32" width="32" src="https://kromatic.fr/wp-content/uploads/2019/08/KLogo_512_carré.png" alt="Kromatic logo" /> Created by Romain Koenig / <a href="https://kromatic.fr" target="_blank" rel="noopener noreferrer">Kromatic</a></p>
 			<p><img height="32" width="32" src="https://cdn.simpleicons.org/github/181717" alt="GitHub logo" /> Hosted on GitHub Pages</p>
 
