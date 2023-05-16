@@ -162,7 +162,7 @@ function Home() {
 
             </div>
             <button className="btn btn-primary download-button" onClick={handlePrint}>
-              Print
+              Print Preview
             </button>
           </div>
         </div>
