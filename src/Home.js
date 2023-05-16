@@ -89,7 +89,6 @@ function Home() {
               value={markdown}
               onChange={handleInputChange}
             />
-            <button className="btn btn-primary download-button" onClick={handleReset}>Reset demo text</button>
           </div>
           <div className="col-6">
             <div id="markdownOutput">
