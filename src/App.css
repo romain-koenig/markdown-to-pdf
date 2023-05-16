@@ -4,17 +4,16 @@
 
 #markdownOutput {
   padding: 20px;
-  height: 85vh;
+  height: 70vh;
   overflow-y: auto;
   border: 1px solid #dedede;
   color: #333;
 }
 
-.download-button {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  font-size: 20px;
-  padding: 10px 20px;
-  transform: translateY(-50%);
+
+/* Hide class printInstructions when printing with media queries*/
+@media print {
+  .printInstructions {
+    display: none;
+  }
 }
