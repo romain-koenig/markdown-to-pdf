@@ -17,6 +17,9 @@ function Navigation() {
 						<li className="nav-item">
 							<Link className="nav-link" to="/about">About</Link>
 						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/cheatsheet">Markdown Cheat Sheet</Link>
+						</li>
 					</ul>
 				</div>
 			</div>

@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from './Home';
 import About from './About';
+import CheatSheet from './CheatSheet';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cheatsheet" element={<CheatSheet />} />
         </Routes>
       </div>
     </Router>
