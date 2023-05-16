@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/romain-koenig.github.io/markdown-to-pdf/static/css/main.278223e3.css",
-    "main.js": "/romain-koenig.github.io/markdown-to-pdf/static/js/main.3084e2cf.js",
-    "static/js/787.de589225.chunk.js": "/romain-koenig.github.io/markdown-to-pdf/static/js/787.de589225.chunk.js",
-    "index.html": "/romain-koenig.github.io/markdown-to-pdf/index.html",
-    "main.278223e3.css.map": "/romain-koenig.github.io/markdown-to-pdf/static/css/main.278223e3.css.map",
-    "main.3084e2cf.js.map": "/romain-koenig.github.io/markdown-to-pdf/static/js/main.3084e2cf.js.map",
-    "787.de589225.chunk.js.map": "/romain-koenig.github.io/markdown-to-pdf/static/js/787.de589225.chunk.js.map"
+    "main.css": "/markdown-to-pdf/static/css/main.278223e3.css",
+    "main.js": "/markdown-to-pdf/static/js/main.ab6c853c.js",
+    "static/js/787.de589225.chunk.js": "/markdown-to-pdf/static/js/787.de589225.chunk.js",
+    "index.html": "/markdown-to-pdf/index.html",
+    "main.278223e3.css.map": "/markdown-to-pdf/static/css/main.278223e3.css.map",
+    "main.ab6c853c.js.map": "/markdown-to-pdf/static/js/main.ab6c853c.js.map",
+    "787.de589225.chunk.js.map": "/markdown-to-pdf/static/js/787.de589225.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.278223e3.css",
-    "static/js/main.3084e2cf.js"
+    "static/js/main.ab6c853c.js"
   ]
 }
