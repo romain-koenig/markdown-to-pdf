@@ -2,6 +2,23 @@
   padding: 20px;
 }
 
+.container-fluid {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+}
+
+.download-button {
+  margin-top: 20px;
+}
+
+
 #markdownOutput {
   padding: 20px;
   height: 70vh;

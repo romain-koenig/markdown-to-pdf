@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';
+import './App.css';
 
 function App() {
   const [markdown, setMarkdown] = useState('');
@@ -82,7 +83,7 @@ function App() {
               value={markdown}
               onChange={handleInputChange}
             />
-            <button className="btn btn-primary" onClick={handleReset}>Reset demo text</button>
+            <button className="btn btn-primary download-button" onClick={handleReset}>Reset demo text</button>
           </div>
           <div className="col-6">
             <div id="markdownOutput">
