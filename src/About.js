@@ -19,6 +19,8 @@ function About() {
 
 			<p>This application was developed with assistance from ChatGPT and GitHub Copilot, both language models developed by <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a>.</p>
 
+			<p>This is just a test</p>
+
 		</div>
 
 	);
