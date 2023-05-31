@@ -19,7 +19,25 @@ function About() {
 
 			<p>This application was developed with assistance from ChatGPT and GitHub Copilot, both language models developed by <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a>.</p>
 
-			<p>This is just a test</p>
+			<h2>Respecting Your Privacy</h2>
+			<p>
+				The tool Markdown-to-PDF prioritizes your privacy. Here are the key points you should know about how we handle your data:
+			</p>
+			<ol>
+				<li>
+					<strong>No Tracking:</strong> We do not use any tracking tools or analytics that would monitor your usage of our application. Your activity on our site is not tracked or recorded.
+				</li>
+				<li>
+					<strong>Data Stays Local:</strong> Any data you input into this application stays in your browser. We don't store or process any of your data on our servers. Everything you type or convert using this tool remains on your local machine.
+				</li>
+				<li>
+					<strong>Open Source:</strong> Our application is open-source. You can view our source code on <a href="https://github.com/romain-koenig/markdown-to-pdf" target="_blank" rel="noopener noreferrer">GitHub</a> to see exactly how it works. We believe in transparency, and we invite you to explore and contribute to our codebase.
+				</li>
+			</ol>
+			<p>
+				My aim is to provide a tool that respects user privacy and promotes free software and transparency. I hope you find Markdown-to-PDF useful and trustworthy.
+			</p>
+
 
 		</div>
 
