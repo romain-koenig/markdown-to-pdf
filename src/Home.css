@@ -27,6 +27,26 @@ textarea {
   color: #222;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 
 /* Hide class printInstructions when printing with media queries*/
 @media print {
