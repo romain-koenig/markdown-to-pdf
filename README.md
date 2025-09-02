@@ -1,6 +1,16 @@
 # Markdown to PDF Converter
 
-This project is a simple, user-friendly tool for converting Markdown syntax into a PDF format. It's perfect for anyone who needs to create beautiful, printable documents from their Markdown files, and it's especially handy for developers and writers who work with Markdown regularly.
+This project is a simple and intuitive tool for converting Markdown to PDF. Perfect for developers, writers, and anyone who needs to create printable documents from Markdown files.
+
+## Features
+
+- Instant Markdown to PDF conversion
+- Real-time Markdown preview
+- Optimized PDF export for printing
+- Support for images, tables, lists, code blocks, etc.
+- Responsive and accessible interface
+- Integrated Markdown Cheat Sheet
+- Smooth navigation between pages
 
 ## Technologies Used
 
@@ -12,19 +22,27 @@ This project is a simple, user-friendly tool for converting Markdown syntax into
 
 ## Local Installation
 
-1. Clone the repository to your local machine using `git clone`.
+1. Clone the repository using `git clone`.
 2. Navigate to the project directory.
-3. Run `npm install` to install all dependencies.
-4. Once the dependencies are installed, you can start the application by running `npm start`.
+3. Run `npm install` to install dependencies.
+4. Start the application with `npm start`.
+
+## Deployment on GitHub Pages
+
+1. Make sure the `homepage` field is set in `package.json`.
+2. Run `npm run deploy` to publish on GitHub Pages.
 
 ## Contributions
 
-Contributions are always welcome! If you see an issue that you'd like to see fixed, the best way to make it happen is to help out by submitting a pull request implementing it.
+Contributions are welcome! Open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Demo
 
-You can see a live demo of the application [here](https://romain-koenig.github.io/markdown-to-pdf/).
-
+A live demo is available at [Markdown to PDF Demo](https://romain-koenig.github.io/markdown-to-pdf/).
 
 ## Available Scripts
 
@@ -32,15 +50,15 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
