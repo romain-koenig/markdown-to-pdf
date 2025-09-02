@@ -54,7 +54,7 @@ function Home() {
               </Markdown>
             </div>
             <button className="btn btn-primary download-button" onClick={() => window.print()}>
-              Print Preview
+              Print
             </button>
           </div>
         </div>
