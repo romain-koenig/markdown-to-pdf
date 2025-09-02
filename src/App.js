@@ -4,17 +4,23 @@ import Navigation from "./Navigation";
 import Home from './Home';
 import About from './About';
 import CheatSheet from './CheatSheet';
+import Footer from './Footer';
+import NotFound from './NotFound';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div>
+      <div className="d-flex flex-column min-vh-100">
         <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/cheatsheet" element={<CheatSheet />} />
-        </Routes>
+        <main className="flex-fill">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cheatsheet" element={<CheatSheet />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );
