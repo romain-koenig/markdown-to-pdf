@@ -10,9 +10,9 @@ import NotFound from './NotFound';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column vh-100">
         <Navigation />
-        <main className="flex-fill">
+        <main className="flex-fill main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

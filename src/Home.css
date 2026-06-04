@@ -1,112 +1,206 @@
-.App {
-  padding: 20px;
+/* ── Editor layout ─────────────────────────────────────────── */
+
+.editor-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  background: #f0f2f5;
 }
 
-.container-fluid {
-  margin-top: 20px;
+.editor-columns {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  overflow: hidden;
+  min-height: 0;
 }
 
-h1 {
-  color: #333;
+.editor-pane,
+.preview-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #fff;
+  border: 1px solid #dde1e7;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-textarea {
+/* ── Pane headers ──────────────────────────────────────────── */
+
+.pane-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  height: 44px;
+  background: #f8f9fb;
+  border-bottom: 1px solid #dde1e7;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* ── Textarea ──────────────────────────────────────────────── */
+
+.editor-textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 16px;
+  font-family: 'Menlo', 'Consolas', 'Courier New', monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #2d3748;
+  background: #fff;
   width: 100%;
+  box-sizing: border-box;
 }
 
-.download-button {
-  margin-top: 20px;
+.editor-textarea:focus {
+  outline: none;
 }
 
+/* ── Preview pane ──────────────────────────────────────────── */
 
 #markdownOutput {
-  padding: 20px;
-  height: 70vh;
+  flex: 1;
   overflow-y: auto;
-  border: 1px solid #dedede;
+  padding: 20px 24px;
   color: #222;
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
-#markdownOutput h1, #markdownOutput h2, #markdownOutput h3 {
-  border-bottom: 2px solid #dedede;
+#markdownOutput h1,
+#markdownOutput h2,
+#markdownOutput h3 {
+  border-bottom: 2px solid #e8eaed;
   padding-bottom: 0.2em;
   margin-bottom: 0.7em;
   margin-top: 1.2em;
 }
+
 #markdownOutput h1 {
-  font-size: 2.2em;
-  color: #2c3e50;
+  font-size: 2em;
+  color: #1a202c;
 }
+
 #markdownOutput h2 {
-  font-size: 1.6em;
-  color: #34495e;
+  font-size: 1.5em;
+  color: #2d3748;
 }
+
 #markdownOutput h3 {
-  font-size: 1.2em;
-  color: #555;
+  font-size: 1.15em;
+  color: #4a5568;
+  border-bottom: 1px solid #e8eaed;
 }
+
 #markdownOutput p {
   margin-bottom: 1em;
-  line-height: 1.7;
 }
-#markdownOutput ul, #markdownOutput ol {
+
+#markdownOutput ul,
+#markdownOutput ol {
   margin-bottom: 1em;
   padding-left: 2em;
 }
-#markdownOutput code, #markdownOutput pre {
-  background: #f8f8f8;
+
+#markdownOutput code {
+  background: #f0f4f8;
   border-radius: 4px;
   padding: 2px 6px;
-  font-size: 0.95em;
-}
-#markdownOutput pre {
-  padding: 1em;
-  overflow-x: auto;
+  font-size: 0.88em;
+  color: #c7254e;
 }
 
-table {
+#markdownOutput pre {
+  background: #1e2433;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+  overflow-x: auto;
+  font-size: 0.88em;
+}
+
+#markdownOutput pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+#markdownOutput blockquote {
+  border-left: 4px solid #cbd5e0;
+  margin: 0 0 1em;
+  padding: 0.5em 1em;
+  color: #718096;
+  background: #f7fafc;
+  border-radius: 0 4px 4px 0;
+}
+
+#markdownOutput table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em 0;
+  font-size: 0.92em;
 }
 
-th, td {
-  padding: 0.5em;
-  border: 1px solid #ccc;
+#markdownOutput th,
+#markdownOutput td {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
 }
 
-th {
-  background-color: #f0f0f0;
+#markdownOutput th {
+  background: #f7fafc;
+  font-weight: 600;
   text-align: left;
+  color: #2d3748;
 }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+#markdownOutput tr:nth-child(even) td {
+  background: #fafbfc;
 }
 
+#markdownOutput hr {
+  border: none;
+  border-top: 2px solid #e8eaed;
+  margin: 1.5em 0;
+}
 
-/* Hide class printInstructions when printing with media queries*/
+/* ── Print ─────────────────────────────────────────────────── */
+
 @media print {
   body * {
     visibility: hidden !important;
   }
-  .print-only, .print-only * {
+
+  .print-only,
+  .print-only * {
     visibility: visible !important;
   }
+
   .print-only {
     position: absolute !important;
-    left: 0;
-    top: 0;
-    width: 100vw;
+    inset: 0;
     background: #fff;
     color: #000;
+    padding: 2cm;
     box-shadow: none;
     border: none;
-    padding: 0;
+    overflow: visible;
+    height: auto;
   }
-  .printInstructions {
-    display: none;
-  }
+
   #markdownOutput {
     padding: 0;
     height: auto;
@@ -114,22 +208,53 @@ tr:nth-child(even) {
     color: #000;
     background: #fff;
   }
-  table {
-    width: 100%;
+
+  #markdownOutput table {
     border-collapse: collapse;
-    margin: 1em 0;
   }
-  th, td {
-    padding: 0.5em;
+
+  #markdownOutput th,
+  #markdownOutput td {
     border: 1px solid #ccc;
     background: #fff;
     color: #000;
   }
-  th {
-    background-color: #f0f0f0;
-    text-align: left;
+
+  #markdownOutput th {
+    background: #f0f0f0;
   }
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
+
+  #markdownOutput pre {
+    background: #f5f5f5;
+    color: #000;
+  }
+
+  #markdownOutput code {
+    background: #f5f5f5;
+    color: #000;
+  }
+}
+
+/* ── Mobile ────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .editor-root {
+    height: auto;
+    overflow: visible;
+    padding: 8px;
+  }
+
+  .editor-columns {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .editor-pane,
+  .preview-pane {
+    min-height: 50vh;
+  }
+
+  .editor-textarea {
+    min-height: 50vh;
   }
 }

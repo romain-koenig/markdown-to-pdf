@@ -1,5 +1,6 @@
 function About() {
 	return (
+		<div className="scrollable-page">
 		<div className="container">
 			<h1>About</h1>
 			<p><img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="React logo" /> A React APP </p>
@@ -17,7 +18,7 @@ function About() {
 				Enjoy converting your Markdown to PDF, and thank you for being a part of this!</p>
 			<p>More work from me on my <a href="https://portfolio.krokee.fr" target="_blank" rel="noopener noreferrer">Portfolio</a>.</p>
 
-			<p>This application was developed with assistance from ChatGPT and GitHub Copilot, both language models developed by <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a>.</p>
+			<p>This application was developed with assistance from <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a> and <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer">Claude Code</a>.</p>
 
 			<h2>Respecting Your Privacy</h2>
 			<p>
@@ -39,6 +40,7 @@ function About() {
 			</p>
 
 
+		</div>
 		</div>
 
 	);

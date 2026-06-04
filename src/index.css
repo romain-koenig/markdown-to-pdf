@@ -1,3 +1,9 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,16 +18,25 @@ code {
     monospace;
 }
 
-/* Print styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.scrollable-page {
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+
 @media print {
-  nav, .Navigation, footer, .Footer {
+  nav,
+  footer {
     display: none !important;
   }
-  main, .container {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+
   body {
     background: #fff !important;
     color: #000 !important;
